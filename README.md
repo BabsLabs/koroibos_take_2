@@ -145,6 +145,28 @@ As a User I can send a `GET` request to `api/v1/events`
 ```
 
 #### Medalist by Event ID
+As a User I can send a `GET` request to `api/v1/events/:id/medalists`
+
+```
+//Response Format
+{
+  "event": "Badminton Mixed Doubles",
+  "medalists": [
+      {
+        "name": "Tontowi Ahmad",
+        "team": "Indonesia-1",
+        "age": 29,
+        "medal": "Gold"
+      },
+      {
+        "name": "Chan Peng Soon",
+        "team": "Malaysia",
+        "age": 28,
+        "medal": "Silver"
+      }
+    ]
+}
+```
 
 ## Known Issues
 None so far!
