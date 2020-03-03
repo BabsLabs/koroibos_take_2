@@ -56,6 +56,24 @@ As a user I can send a `GET` request to `api/v1/olympians`
 ```
 
 #### Youngest Olympian
+As a User I can send a `GET` request to `api/v1/olympians?age=youngest`
+
+```
+//Response Format
+{
+  "olympians":
+    [
+      {
+        "name": "Ana Iulia Dascl",
+        "team": "Romania",
+        "age": 13,
+        "sport": "Swimming"
+        "total_medals_won": 0
+      }
+    ]
+}
+```
+
 #### Oldest Olympian
 #### Olympian Stats
 #### Events
