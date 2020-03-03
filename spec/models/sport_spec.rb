@@ -2,8 +2,8 @@ require "rails_helper"
 
 describe Sport do
   describe "realtionships" do
-    it { should have_many :olympian_sports }
     it { should have_many :events }
+    it { should have_many :olympians }
   end
 
   describe "validations" do

@@ -5,6 +5,7 @@ describe Olympian do
     it { should have_many :medals }
     it { should have_many :olympian_events }
     it { should have_many :events }
+    it { should belong_to :sport }
   end
 
   describe "validations" do
