@@ -75,6 +75,24 @@ As a User I can send a `GET` request to `api/v1/olympians?age=youngest`
 ```
 
 #### Oldest Olympian
+As a user I can send a `GET` request to `api/v1/olympians?age=oldest`
+
+```
+//Response Format
+{
+  "olympians":
+    [
+      {
+        "name": "Julie Brougham",
+        "team": "New Zealand",
+        "age": 62,
+        "sport": "Equestrianism"
+        "total_medals_won": 0
+      }
+    ]
+}
+```
+
 #### Olympian Stats
 #### Events
 #### Medalist by Event ID
