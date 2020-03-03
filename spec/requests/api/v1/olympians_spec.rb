@@ -8,13 +8,12 @@ describe "Olympian Endpoint" do
 
     parsed_response = JSON.parse(response.body, symbolize_names: true)
 
-    expect(parsed_response).to have_key :olympian_stats
-    expect(parsed_response[:olympian_stats]).to have_key :total_competing_olympians
-    expect(parsed_response[:olympian_stats]).to have_key :average_weight
-    expect(parsed_response[:olympian_stats][:average_weight]).to have_key :unit
-    expect(parsed_response[:olympian_stats][:average_weight][:unit]).to eq "kg"
-    expect(parsed_response[:olympian_stats][:average_weight]).to have_key :male_olympians
-    expect(parsed_response[:olympian_stats][:average_weight]).to have_key :female_olympians
-    expect(parsed_response[:olympian_stats]).to have_key :average_age
+    expect(parsed_response).to have_key :olympians
+    expect(parsed_response[:olympians]).to be_an Array
+    expect(parsed_response[:olympians][0]).to have_key :name
+    expect(parsed_response[:olympians][0]).to have_key :age
+    expect(parsed_response[:olympians][0]).to have_key :team
+    expect(parsed_response[:olympians][0]).to have_key :sport
+    expect(parsed_response[:olympians][0]).to have_key :total_medals_won
   end
 end
