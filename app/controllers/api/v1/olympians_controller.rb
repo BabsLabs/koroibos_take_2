@@ -1,7 +1,14 @@
 class Api::V1::OlympiansController < ApplicationController
 
   def index
-    render json: {olympians: OlympianFacade.olympians}
+    if params[:age]
+      params[:age].downcase
+      if params[:age] == 'youngest'
+        render json: { olympians: [YoungestOlympianFacade.olympian] }
+      end
+    else
+      render json: { olympians: OlympianFacade.olympians }
+    end
   end
 
 end
