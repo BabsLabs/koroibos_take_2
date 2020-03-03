@@ -29,6 +29,32 @@ This is the first version of this API. All endpoints are prepended with `/api/v1
 
 ### Available Endpoints
 #### Olympians
+As a user I can send a `GET` request to `api/v1/olympians`
+
+```
+//Response Format
+{
+  "olympians":
+    [
+      {
+        "name": "Maha Abdalsalam",
+        "team": "Egypt",
+        "age": 18,
+        "sport": "Diving"
+        "total_medals_won": 0
+      },
+      {
+        "name": "Ahmad Abughaush",
+        "team": "Jordan",
+        "age": 20,
+        "sport": "Taekwondo"
+        "total_medals_won": 1
+      },
+      {...}
+    ]
+}
+```
+
 #### Youngest Olympian
 #### Oldest Olympian
 #### Olympian Stats
