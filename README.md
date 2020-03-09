@@ -1,4 +1,4 @@
-# Koroibos Take 2
+# Koroibos
 
 ## About
 Koroibos is an application that returns data on olympic athletes and events from the 2016 olympics. This is my take 2... done the way I should have done it in the first place.
