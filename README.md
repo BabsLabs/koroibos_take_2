@@ -3,7 +3,7 @@
 ## About
 Koroibos is an application that returns statistics on olympic athletes and events based off data collected from the 2016 olympics. This applicaiton uses Ruby on Rails to process CSV data and return it as an API.
 
-![Korobois API Example](https://user-images.githubusercontent.com/38663414/76343282-c9c81a80-62f7-11ea-85c8-94186ac72bd8.png)
+<img src="https://user-images.githubusercontent.com/38663414/76343282-c9c81a80-62f7-11ea-85c8-94186ac72bd8.png" width="40%">
 
 ## Setup
 1. Clone repo
